@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConstraintActivity">
+
+    <TextView
+        android:id="@+id/TxtConstraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#039BE5"
+        android:padding="10dp"
+        android:text="@string/constraintLayoutText"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/TopGuideLine"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/BottomGuideLine"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/StartGuideLine"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/EndGuideLine"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <View
+        android:id="@+id/ImgAvatar"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:contentDescription="@string/loginFormImgAvatar"
+        android:background="#FF8A65"
+        app:layout_constraintVertical_bias="0.25"
+        app:layout_constraintEnd_toEndOf="@+id/EndGuideLine"
+        app:layout_constraintStart_toStartOf="@+id/StartGuideLine"
+        app:layout_constraintTop_toTopOf="@+id/TopGuideLine"
+        app:layout_constraintBottom_toBottomOf="@+id/BottomGuideLine" />
+
+    <EditText
+        android:id="@+id/TxtEmail"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:inputType="textEmailAddress"
+        android:hint="@string/loginFormTxtEmail"
+        android:autofillHints="E-mail"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/EndGuideLine"
+        app:layout_constraintStart_toStartOf="@+id/StartGuideLine"
+        app:layout_constraintTop_toBottomOf="@+id/ImgAvatar"
+        app:layout_constraintBottom_toTopOf="@+id/TxtPassword" />
+
+    <EditText
+        android:id="@+id/TxtPassword"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:inputType="textPassword"
+        android:hint="@string/loginFormTxtPassword"
+
+        android:autofillHints="Password"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/EndGuideLine"
+        app:layout_constraintStart_toStartOf="@+id/StartGuideLine"
+        app:layout_constraintTop_toBottomOf="@+id/TxtEmail" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/loginFormBtnLogin"
+        app:layout_constraintEnd_toEndOf="@+id/EndGuideLine"
+        app:layout_constraintStart_toStartOf="@+id/StartGuideLine"
+        app:layout_constraintTop_toBottomOf="@+id/TxtPassword"
+        app:layout_constraintBottom_toTopOf="@+id/BottomGuideLine" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/TxtTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#039BE5"
+        android:padding="10dp"
+        android:text="@string/mainActivityText"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/BtnLinearLayout"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btnLinearLayoutText"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintBottom_toTopOf="@+id/BtnConstraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TxtTitle"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/BtnConstraintLayout"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btnConstraintLayoutText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtnLinearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintBottom_toTopOf="@+id/BtnFrameLayout" />
+
+    <Button
+        android:id="@+id/BtnFrameLayout"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btnFrameLayoutText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtnConstraintLayout"
+        app:layout_constraintBottom_toTopOf="@+id/BtnTableLayout" />
+
+    <Button
+        android:id="@+id/BtnTableLayout"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btnTableLayoutText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtnFrameLayout"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

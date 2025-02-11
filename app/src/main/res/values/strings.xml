@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Layouts</string>
+    <string name="mainActivityText">Main Activity</string>
+    <string name="btnLinearLayoutText">Linear Layout</string>
+    <string name="btnConstraintLayoutText">Constraint Layout</string>
+    <string name="btnFrameLayoutText">Frame Layout</string>
+    <string name="btnTableLayoutText">Table Layout</string>
+    <string name="linearLayoutText">Linear Layout</string>
+    <string name="constraintLayoutText">Constraint Layout</string>
+    <string name="loginFormTxtEmail">E-mail</string>
+    <string name="loginFormTxtPassword">Password</string>
+    <string name="loginFormBtnLogin">Iniciar sesión</string>
+    <string name="loginFormImgAvatar">Avatar image</string>
+</resources>
