@@ -11,4 +11,7 @@
     <string name="loginFormTxtPassword">Password</string>
     <string name="loginFormBtnLogin">Iniciar sesión</string>
     <string name="loginFormImgAvatar">Avatar image</string>
+    <string name="frameLayoutText">Frame Layout</string>
+    <string name="frameFormTxtView">Frame Layout Text</string>
+    <string name="tableLayoutText">Table Layout</string>
 </resources>

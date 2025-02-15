@@ -35,11 +35,13 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnFrameLayout.setOnClickListener {
-
+            val intent = Intent(this, FrameActivity::class.java)
+            startActivity(intent)
         }
 
         btnTableLayout.setOnClickListener {
-
+            val intent = Intent(this, TableActivity::class.java)
+            startActivity(intent)
         }
     }
 }

@@ -95,10 +95,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/loginFormBtnLogin"
+        app:layout_constraintBottom_toTopOf="@+id/BottomGuideLine"
         app:layout_constraintEnd_toEndOf="@+id/EndGuideLine"
         app:layout_constraintStart_toStartOf="@+id/StartGuideLine"
-        app:layout_constraintTop_toBottomOf="@+id/TxtPassword"
-        app:layout_constraintBottom_toTopOf="@+id/BottomGuideLine" />
+        app:layout_constraintTop_toBottomOf="@+id/TxtPassword" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

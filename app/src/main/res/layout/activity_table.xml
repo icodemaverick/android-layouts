@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".TableActivity"
+    android:shrinkColumns="1" >
+    <TableRow>
+        <TextView
+            android:id="@+id/TxtFrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#039BE5"
+            android:padding="10dp"
+            android:text="@string/frameLayoutText"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_span="2" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="Nombre"
+            android:textStyle="bold"
+            android:padding="8dp" />
+        <TextView
+            android:text="E-mail"
+            android:textStyle="bold"
+            android:padding="8dp" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="Mario Meléndez"
+            android:padding="8dp" />
+        <TextView
+            android:text="mario.arturo.melendez.santamaria@correo.com"
+            android:padding="8dp" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="Alejandro Meléndez"
+            android:padding="8dp" />
+        <TextView
+            android:text="alejandro.melendez@correo.com"
+            android:padding="8dp" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="Diego Meléndez"
+            android:padding="8dp" />
+        <TextView
+            android:text="diego.melendez@correo.com"
+            android:padding="8dp" />
+    </TableRow>
+</TableLayout>
